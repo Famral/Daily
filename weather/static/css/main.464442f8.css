@@ -1,0 +1,224 @@
+* {
+    font-family: Arial, Helvetica, sans-serif !important
+}
+
+#App {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center
+}
+
+#App,
+form {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+form {
+    width: 100%
+}
+
+input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px
+}
+
+button,
+input {
+    background-color: #e4f4ff;
+    border: 3px solid #3c8aff
+}
+
+button {
+    font-size: 20px
+}
+
+.card * {
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif !important
+}
+
+.card {
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 #4f75a3;
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    justify-content: space-between;
+    margin: 10px;
+    max-width: calc(100vw - 90px);
+    padding: 30px;
+    width: 450px
+}
+
+.card>.location {
+    max-width: 50%
+}
+
+.card>.location>.city {
+    font-size: 30px
+}
+
+.card>.location * {
+    margin: 6px
+}
+
+.card>.location>.flex>.region {
+    font-size: 20px
+}
+
+.card>.location>.flex>.country {
+    font-size: 25px
+}
+
+.card>.location>.timed {
+    font-size: 13px;
+    font-weight: 900
+}
+
+.card>.info>.condition>.status {
+    font-size: 20px;
+    margin-bottom: 10px
+}
+
+@media (max-width:500px) {
+    .card {
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 10px auto;
+        overflow: auto
+    }
+
+    .card>.location>.timed {
+        font-size: 13px;
+        font-weight: 900
+    }
+
+    .card>.location {
+        line-height: 35px;
+        margin: 10px 0;
+        max-width: 100%;
+        text-align: left
+    }
+
+    .card>.location * {
+        margin: 0
+    }
+
+    .card>.location>.flex {
+        flex-direction: column;
+        line-height: 30px
+    }
+
+    .card>.location>.city {
+        font-size: 38px;
+        margin-bottom: 10px
+    }
+
+    .card>.location>.flex>.region {
+        font-size: 23px
+    }
+
+    .card>.location>.flex>.country {
+        font-size: 20px
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row
+}
+
+.temp {
+    font-size: 50px
+}
+
+table>tbody {
+    text-align: left
+}
+
+table>tbody>tr>td {
+    padding: 5px 8px
+}
+
+.btn-save {
+    border: 0;
+    box-shadow: 0 3px 3px 0 rgb(0, 0, 117);
+    color: #006;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    width: -webkit-max-content;
+    width: max-content;
+    width: 100%
+}
+
+.card-cover {
+    display: flex;
+    flex-direction: column
+}
+
+img.linkb-icon {
+    height: 30px;
+    margin-top: 200px;
+    width: 60px
+}
+
+#linkb,
+img.wicon {
+    height: 64px;
+    max-height: 64px;
+    max-width: 64px;
+    width: 64px
+}
+
+.loading {
+    height: 15px
+}
+
+.bar {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: bar;
+    animation-name: bar;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background-color: #0059ff;
+    height: 8px;
+    width: 30px
+}
+
+@-webkit-keyframes bar {
+    0% {
+        width: 0
+    }
+
+    50% {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
+}
+
+@keyframes bar {
+    0% {
+        width: 0
+    }
+
+    50% {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
+}
+
+/*# sourceMappingURL=main.464442f8.css.map*/
