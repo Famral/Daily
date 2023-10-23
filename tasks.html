@@ -2,32 +2,31 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>Famral Tasks & To-Do List</title>
+    <title>To-Do List & Task Management | Famral Tasks</title>
     <link rel="icon" type="image/x-icon" href="https://www.famral.com/favicon.png"/>
     <!-- Corrected Font Awesome stylesheet link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            background-color: hsl(248, 100%, 98%);
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            min-height: 40vh;
             margin: 0;
         }
 
-        .container {
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
+        .main-container {
+            background-color: hsl(248, 100%, 98%);
+            border-radius: 10px;
+            width: 600px;
             padding: 20px;
         }
 
         h1 {
             text-align: center;
-            color: #007BFF;
+            color: #0059ff;
         }
 
         .task-list {
@@ -41,33 +40,40 @@
             align-items: center;
             padding: 10px;
             background-color: #ffffff;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 1px solid #c2c9ff;
+            border-radius: 10px;
             margin: 10px 0;
             transition: background-color 0.2s;
         }
 
         .task:hover {
-            background-color: #f9f9f9;
+            background-color: #eff1ff;
+            border: 2px solid #b7bfff;
         }
 
         .task button {
             background-color: #f44336;
-            color: white;
+            color: rgb(255, 255, 255);
             border: none;
             padding: 5px 10px;
             cursor: pointer;
         }
 
         .completed {
-            background-color: #b3ffb3;
+            background-color: #ebebeb;
+            color: #acacac;
+        }
+
+        .completed:hover {
+            background-color: #e9e9e9;
+            border: 2px solid #c4c4c4;
         }
 
         input[type="text"] {
-            width: 70%;
+            width: 80%;
             padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            border: 2px solid #828fff;
+            border-radius: 10px;
         }
 
         .task-actions {
@@ -76,12 +82,12 @@
         }
 
         button.add-button {
-            width: 30%;
-            background-color: #007BFF;
+            width: 20%;
+            background-color: #3b5fff;
             color: white;
             border: none;
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
         }
 
@@ -91,12 +97,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
+
+    <div class="main-container">
         <h1>Tasks & To-Do List</h1>
         <div class="task-actions">
             <input type="text" id="task" placeholder="Add a new task">
             <button class="add-button" onclick="addTask()"><i class="fas fa-plus"></i></button>
-        </div>
+        </div> <br>
         <ul class="task-list" id="taskList">
         </ul>
     </div>
